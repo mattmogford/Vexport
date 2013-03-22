@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Vexport by mattmogford</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/mattmogford/Vexport">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Vexport</h1>
+            <h2>Vector Shapes - To Data and Back Again!</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/mattmogford/Vexport/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/mattmogford/Vexport/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1></h1>
+
+<p><strong>Main Features</strong></p>
+
+<ul>
+<li><p><strong>Vexport is a tool for Actionscript 3 that converts a Vector based DisplayObject to an XML format.</strong></p></li>
+<li><p><strong>It also can take that same XML format and re-create a Vector based DisplayObject.</strong></p></li>
+</ul><p><strong>Desktop Application - Coming Soon.</strong>
+Will be able to load a swf file, you can then select all the valid DisplayObjects to convert to a compressed data file.
+Which can then be loaded using the Vexport.swc</p>
+
+<p><strong>HOWTO</strong></p>
+
+<pre><code>if( Vexport.checkIsValid( displayObj ) )
+{
+    var xml:XML = Vexport.vectorToXML( displayObj );
+
+    ...........
+
+    var vectorData:Vector.&lt;IGraphicsData&gt; = Vexport.xmlToVector( xml );
+
+    var mc2:MovieClip = new MovieClip();
+    mc2.graphics.drawGraphicsData( vectorData );
+    this.addChild( mc2 );
+}
+</code></pre>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/mattmogford">mattmogford</a> can be found on <a href="https://github.com/mattmogford/Vexport">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
