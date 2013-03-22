@@ -9,7 +9,7 @@ It also can take that same XML format and re-create a Vector based DisplayObject
 Will be able to load a swf file, you can then select all the valid DisplayObjects to convert to a compressed data file.
 Which can then be loaded using the Vexport.swc
 
-**HOWOTO**
+**HOWTO**
 ```
 if( Vexport.checkIsValid( displayObj ) )
 {
